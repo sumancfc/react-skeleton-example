@@ -1,9 +1,11 @@
 import React from "react";
 import SkeletonElement from "./SkeletonElement";
 
-const SkeletonProfile = () => {
+const SkeletonProfile = ({ theme }) => {
+  const themeClass = theme || "light";
+
   return (
-    <div className='skeleton__wrapper'>
+    <div className={`skeleton__wrapper ${themeClass}`}>
       <div className='skeleton__profile'>
         <div>
           <SkeletonElement type='avatar' />

@@ -38,6 +38,11 @@
 .skeleton__wrapper {
   margin: 1.35rem auto;
   padding: 0.65rem 0.9rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
 }
 
 .skeleton__profile {
@@ -45,4 +50,14 @@
   grid-template-columns: 1fr 2fr;
   grid-gap: 1.85rem;
   align-items: center;
+}
+
+.skeleton__wrapper.light {
+  background: #f2f2f2;
+}
+.skeleton__wrapper.dark {
+  background: #444;
+}
+.skeleton__wrapper.dark .skeleton {
+  background: #777;
 }
